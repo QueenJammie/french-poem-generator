@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <title>French poem generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>AI French poem generator</title>
 </head>
 <body>
     <header>
@@ -12,20 +14,42 @@
     </header>
 
     <main>
-        <p>Typewriter: Bonjour, j'ai entendu la fée du soleil couchant me demander de vous composer un poème, rien que pour vous! </p>
-        <form action="script.js">
-            <label for="sujet">Quel est le sujet du poème que je dois composer pour vous, cher(e)?</label>
-            <input  type="text" 
-                        name="sujet" 
-                        id="sujet" 
-                        placeholder="Les roses au levée du soleil..?" 
-                        autofocus="off"
-                        required 
-            />
-            <input type="submit" value="Envoyer" />
+        <p id="wait"></p>
+        <form action="script.js" class="instructions">
+            <div class="gridBy2">
+                <div>
+                    <label for="sujet">Quel est le sujet du poème que je dois composer pour vous, cher(e)?</label>
+                    <input  type="text" 
+                                name="sujet" 
+                                id="sujet" 
+                                placeholder="Les roses au levée du soleil..?" 
+                                autofocus="off"
+                                required 
+                    />
+                </div>
+                <div></div>
+                <input type="submit" value="Envoyer" class="submit-button" />
+            </div>
+            
         </form>
-        <div>
-            <h2>Résultat...</h2>
+        <div class="poem">
+            <h2 id="patientez"></h2>
+            <p>
+                    The snow falls gently on the ground,<br />
+                    A blanket of white, without a sound.<br />
+                    The trees are bare, the sky is gray,<br />
+                    But in my heart, it's spring today.<br /><br />
+
+                    The world is cold, the wind is chill,<br />
+                    But in my heart, it's warm and still.<br />
+                    The flowers bloom, the birds take flight,<br />
+                    And everything is bathed in light.<br /><br />
+
+                    The snow will melt, the sun will shine,<br />
+                    And everything will be just fine.<br />
+                    For in my heart, the seasons blend,<br />
+                    And love and hope will never end.
+            </p>
             <!-- Poème -->
         </div>
     </main>
