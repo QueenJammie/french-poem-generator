@@ -43,6 +43,13 @@ form.instructions {
     display: grid;
     grid-template-columns: 6fr 6fr;
 }
+label {
+    display: block;
+}
+input {
+    display: block;
+    width: 100%;
+}
 .submit-button {
     display: block;
     margin: 0 auto;
@@ -70,7 +77,7 @@ form.instructions {
     padding: 20px 40px;
 }
 .poem p {
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
     padding: 20px;
     line-height: 2;
