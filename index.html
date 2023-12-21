@@ -7,12 +7,32 @@
     <title>French poem generator</title>
 </head>
 <body>
-    <div class="banner">
-        <span class="h1">
+    <header>
             <h1>AI French Poem Generator</h1>
-        </span>
-        
-    </div>
+    </header>
+
+    <main>
+        <p>Typewriter: Bonjour, j'ai entendu la fée du soleil couchant me demander de vous composer un poème, rien que pour vous! </p>
+        <form action="script.js">
+            <label for="sujet">Quel est le sujet du poème que je dois composer pour vous, cher(e)?</label>
+            <input  type="text" 
+                        name="sujet" 
+                        id="sujet" 
+                        placeholder="Les roses au levée du soleil..?" 
+                        autofocus="off"
+                        required 
+            />
+            <input type="submit" value="Envoyer" />
+        </form>
+        <div>
+            <h2>Résultat...</h2>
+            <!-- Poème -->
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
     <script src="src/script.js"></script>
 </body>
 </html>

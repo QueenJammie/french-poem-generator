@@ -2,17 +2,28 @@ body {
     background-color: pink;
 }
 
-.banner {
+header {
     width: 95%;
     height: 200px;
     display: block;
     margin: 15px auto;
     background-color: blueviolet;
 }
-.banner .h1 {
+header h1 {
     display: inline-block;
     width: 100%;
     margin: 60px auto;
     text-align: center;
     color: #fff;
+}
+
+main {
+    display: block;
+    margin: 0 50px;
+}
+main input#sujet {
+    display: block;
+    margin: 4px 0;
+    width: 600px;
+    height: 1.2em;
 }
