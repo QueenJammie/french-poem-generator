@@ -17,7 +17,7 @@ function submitPoem(response) {
 
     setTimeout(() => {
         new Typewriter("#poem-field", {
-            strings: "The snow falls gently on the ground<br />A blanket of white, without a sound.",
+            strings: response.data.answer,
             autoStart: true,
             delay: 30,
         })
@@ -27,9 +27,11 @@ function submitPoem(response) {
 function handleSubmit(event) {
     event.preventDefault();
 
+    let sujetInput = document.querySelector("#sujetInput");
+
     let apiKey = "00261b686eo1ff734tce27d5a5f63915";
     let context = "You are a prestigious poem writer";
-    let prompt = "Hello, miss! I'd like you to write a love poem for me and lover boy. Please!";
+    let prompt = `Hello, miss! I'd like you to write a poem for me and my lover boy. Please generate a poem about ${sujetInput.value} for me and my boyfriend, Ismail! Do not use gender in your sentences.`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
     axios.get(apiUrl).then(submitPoem);
