@@ -30,8 +30,8 @@ function handleSubmit(event) {
     let sujetInput = document.querySelector("#sujetInput");
 
     let apiKey = "00261b686eo1ff734tce27d5a5f63915";
-    let context = "You are a prestigious poem writer";
-    let prompt = `Please, generate a french poem about ${sujetInput.value} in basic HTML! Do not use gender in your sentences and follow the user instructions`;
+    let context = "You are a prestigious poem writer. Do not use gender in your sentences and follow the user instructions.";
+    let prompt = `Please, generate a french poem about ${sujetInput.value} in basic HTML!`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
     axios.get(apiUrl).then(submitPoem);
