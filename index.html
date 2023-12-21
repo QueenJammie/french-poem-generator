@@ -15,7 +15,7 @@
 
     <main>
         <p id="wait"></p>
-        <form action="script.js" class="instructions">
+        <form action="script.js" class="instructions" id="poem-generator-form">
             <div class="gridBy2">
                 <div>
                     <label for="sujet">Quel est le sujet du poème que je dois composer pour vous, cher(e)?</label>
@@ -34,22 +34,7 @@
         </form>
         <div class="poem">
             <h2 id="patientez"></h2>
-            <p>
-                    The snow falls gently on the ground,<br />
-                    A blanket of white, without a sound.<br />
-                    The trees are bare, the sky is gray,<br />
-                    But in my heart, it's spring today.<br /><br />
-
-                    The world is cold, the wind is chill,<br />
-                    But in my heart, it's warm and still.<br />
-                    The flowers bloom, the birds take flight,<br />
-                    And everything is bathed in light.<br /><br />
-
-                    The snow will melt, the sun will shine,<br />
-                    And everything will be just fine.<br />
-                    For in my heart, the seasons blend,<br />
-                    And love and hope will never end.
-            </p>
+            <p id="poem-field"></p>
             <!-- Poème -->
         </div>
     </main>
