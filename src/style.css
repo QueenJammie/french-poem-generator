@@ -49,8 +49,9 @@ main label {
     cursor: pointer;
     background-color: #691db0;
 }
+
 .poem {
-    display: none;
+    display: block;
     margin: 0 auto;
     padding: 15px;
     max-width: 600px;
@@ -69,6 +70,10 @@ main label {
 }
 .poem p {
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {

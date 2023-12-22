@@ -41,6 +41,9 @@ let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", handleSubmit);
 */
 function displayPoem(response) {
+    let poemField = document.querySelector("#poem-field");
+    poemField.classList.remove("hidden");
+    
     new Typewriter("#poem-field", {
         strings: response.data.answer,
         autoStart: true,
@@ -62,9 +65,6 @@ function submitPoem() {
 
 function handleSubmit(event) {
     event.preventDefault();
-
-    let poemField = document.querySelector("#poem-field");
-    poemField.style.display = "block";
 
     new Typewriter("#wait-field", {
         strings: "Un instant, patientez...",
