@@ -1,4 +1,4 @@
-function submitPoem(response) {
+/*function submitPoem(response) {
     new Typewriter("#wait", {
         strings: "Bonjour, j'ai entendu la fée du soleil couchant me demander de vous composer un poème, rien que pour vous!",
         autoStart: true,
@@ -39,3 +39,4 @@ function handleSubmit(event) {
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", handleSubmit);
+*/
