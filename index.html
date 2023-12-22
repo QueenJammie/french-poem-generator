@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     
     <title>Générateur de poème intelligent</title>
@@ -12,18 +14,15 @@
             <h1>IA Générateur de Poème Intelligent</h1>
     </header>
     <main>
-        <form action="src/script.js">
+        <form action="src/script.js" id="poem-generator-form">
             <label for="topic">Quel est le thème du poème que je dois vous composer?</label>
             <input type="text" class="topic" id="topic" placeholder="Les fleurs qui renaissent au printemps..?" autofocus autocomplete="off" required>
-            <input type="submit" value="Envoyer" class="submit" />
-            <div class="poem">
-                <p>
-                    L'amour est magicien<br />
-                    Le suprême bonheur de la vie<br />
-                    C'est la conviction...
-                </p>
-            </div>
+            <input type="submit" value="Envoyer" class="submit" id="submitInput" />
         </form>
+        <p id="wait-field"></p>
+        <div class="poem" id="poem-field">
+            
+        </div>
     </main>
     <footer>
         <p>"

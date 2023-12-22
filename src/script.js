@@ -40,3 +40,35 @@ function handleSubmit(event) {
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", handleSubmit);
 */
+function displayPoem(response) {
+    new Typewriter("#poem-field", {
+        strings: response.data.answer,
+        autoStart: true,
+        delay: 30,
+    });
+}
+
+function submitPoem() {
+    let instructionInput = document.querySelector("#topic");
+
+    let apiKey = "00261b686eo1ff734tce27d5a5f63915";
+    let prompt = `Write a french poem about ${instructionInput.value} and sign it with 'SheCodes IA' in a <strong> element at the very end of the poem. Please, give your answer in HTML format, each line separated by a <br />, centered and without any background.`;
+    let context = "You are a prestigious writer who like to write poem and to help other.";
+    let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+    axios.get(apiUrl).then(displayPoem);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    new Typewriter("#wait-field", {
+        strings: "Un instant, patientez...",
+        autoStart: true,
+        delay: 110,
+        cursor: "",
+    });
+    submitPoem();
+}
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit", handleSubmit);
