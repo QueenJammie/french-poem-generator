@@ -50,7 +50,7 @@ main label {
     background-color: #691db0;
 }
 .poem {
-    display: block;
+    display: none;
     margin: 0 auto;
     padding: 15px;
     max-width: 600px;
