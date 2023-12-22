@@ -31,6 +31,10 @@ main label {
 }
 .topic {
     width: 80%;
+    border: 1px solid rgba(33,36, 66, 0.5);
+    border-radius: 12px;
+    padding: 8px;
+    margin: 6px 0 3px 0;
 }
 .submit {
     display: block;
@@ -46,10 +50,24 @@ main label {
     background-color: #691db0;
 }
 .poem {
-    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 600px;
     font-family: cursive;
+    line-height:38px;
+    background-color: #f3ede2;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: 4px 4px #3a393942;
+    border-left: 3px solid #691db0;
+}
+.poem p {
+    text-align: center;
 }
 
+footer {
+    margin-top: 30px;
+}
 footer p {
     text-align: center;
 }
