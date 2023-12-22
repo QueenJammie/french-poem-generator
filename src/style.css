@@ -62,7 +62,7 @@ main label {
     box-shadow: 4px 4px #3a393942;
     border-left: 3px solid #691db0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .poem {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
