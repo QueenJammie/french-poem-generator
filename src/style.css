@@ -54,7 +54,8 @@ main label {
     margin: 0 auto;
     padding: 15px;
     max-width: 600px;
-    font-family: cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
     line-height:38px;
     background-color: #f3ede2;
     border-radius: 15px 15px 15px 0;
