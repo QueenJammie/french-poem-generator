@@ -54,13 +54,18 @@ main label {
     margin: 0 auto;
     padding: 15px;
     max-width: 600px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: cursive;
     font-style: italic;
     line-height:38px;
     background-color: #f3ede2;
     border-radius: 15px 15px 15px 0;
     box-shadow: 4px 4px #3a393942;
     border-left: 3px solid #691db0;
+}
+@media screen and (max-width: 600px) {
+    .poem {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
 .poem p {
     text-align: center;
