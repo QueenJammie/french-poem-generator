@@ -4,43 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
     <title>Générateur de poème intelligent</title>
 </head>
 <body>
     <header>
-            <h1>IA Générateur de Poème Intelligent2</h1>
+            <h1>IA Générateur de Poème Intelligent</h1>
     </header>
-
     <main>
-        <p id="wait"></p>
-        <form action="script.js" class="instructions" id="poem-generator-form">
-            <div class="gridBy2">
-                <div>
-                    <label for="sujet">Quel est le sujet du poème que je dois composer pour vous, cher(e)?</label>
-                    <input  type="text" 
-                                name="sujet" 
-                                id="sujetInput" 
-                                placeholder="Les roses au levée du soleil..?" 
-                                autofocus="off"
-                                required 
-                    />
-                </div>
-                <div></div>
-                <input type="submit" value="Envoyer" class="submit-button" />
-            </div>
-            
-        </form>
-        <div class="poem">
-            <h2 id="patientez"></h2>
-            <p id="poem-field"></p>
-            <!-- Poème -->
-        </div>
+
     </main>
-
     <footer>
-
+        <p>"
+            Ce projet a été codé par 
+            <a href="https://www.facebook.com/jammie.elena.lachance" target="_blank">
+                Jammie Lachance-Côté
+            </a>
+            et est 
+            <a href="https://github.com/QueenJammie/french-poem-generator" target="_blank">
+                open-sourced
+            </a> 
+            on 
+            <a href="https://jammielacc-french-poem-generator.netlify.app/">Netlify</a>
+        </p>
     </footer>
     <script src="src/script.js"></script>
 </body>
