@@ -26,7 +26,33 @@ main {
     margin: 0 50px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+main label {
+    display: block;
+}
+.topic {
+    width: 80%;
+}
+.submit {
+    display: block;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin: 6px auto;
+    border-radius: 8px;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: #691db0;
+}
+.poem {
+    text-align: center;
+    font-family: cursive;
+}
 
 footer p {
     text-align: center;
+}
+footer a {
+    text-decoration: none;;
 }
